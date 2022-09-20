@@ -5,6 +5,7 @@ import Header_text from "./Header_text";
 const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
+  padding: 0;
 `;
 
 const First_Part = ["Home", "About", "Services"];

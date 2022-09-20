@@ -15,6 +15,10 @@ function Header_navbar({
     list-style-type: none;
     display: flex;
     gap: 10px;
+
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    letter-spacing: 0.1em;
   `;
 
   const Dropdown = styled.div`
@@ -41,6 +45,8 @@ function Header_navbar({
   `;
 
   const Navbar_nav_item = styled.div`
+    margin: 10px 10px 10px 10px;
+
     :focus-within ${Dropdown} {
       opacity: 1;
       pointer-events: all;
