@@ -65,7 +65,7 @@ function Header_navbar({
     }
   `;
   return (
-    <div>
+    <div style={{ marginTop: "2%" }}>
       {dropdown ? (
         <Navbar_nav>
           <Navbar_nav_item>
@@ -77,16 +77,18 @@ function Header_navbar({
           <Navbar_nav_item>
             <a href="#">{part[2]}</a>
             <Dropdown>
-              {content_dropdown?.map((item) => (
-                <a href="#">{item}</a>
+              {content_dropdown?.map((item, index) => (
+                <a key={index} href="#">
+                  {item}
+                </a>
               ))}
             </Dropdown>
           </Navbar_nav_item>
         </Navbar_nav>
       ) : (
         <Navbar_nav>
-          {part.map((item) => (
-            <Navbar_nav_item>
+          {part.map((item, index) => (
+            <Navbar_nav_item key={index}>
               <a href="#">{item}</a>
             </Navbar_nav_item>
           ))}

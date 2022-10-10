@@ -15,9 +15,13 @@ const Wrapper = styled.div`
   place-items: center;
   justify-content: center;
   align-items: center;
-  font-size: min(calc(1em + 0.5vw), 16px);
+  font-size: min(calc(1em + 0.5vw), calc(12px + 0.2vw));
   padding: 3% 10% 3% 10%;
   gap: 10%;
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 `;
 
 function AboutMe() {
