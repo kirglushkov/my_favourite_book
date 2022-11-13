@@ -20,7 +20,6 @@ function Header() {
   const size = useMobile();
 
   const isMobile = size.width <= 768 ? true : false;
-
   return (
     <Wrapper>
       {isMobile ? (

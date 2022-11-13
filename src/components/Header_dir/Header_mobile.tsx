@@ -7,7 +7,7 @@ const Box = styled.div<{ click: boolean }>`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: ${(props) => (props.click ? "10vh" : "5vh")};
+  height: ${(props) => (props.click ? "12vh" : "7vh")};
   background-color: tomato;
   justify-content: center;
   align-items: center;
@@ -15,11 +15,12 @@ const Box = styled.div<{ click: boolean }>`
 `;
 
 const Title = styled.div<{ click: boolean }>`
+  width: calc(100% - 35px);
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
-  font-size: max(3vw, 24px);
+  font-size: max(3vw, 14px);
   font-weight: 600;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.1em;
@@ -31,7 +32,7 @@ const Dropdown = styled.div<{ click: boolean }>`
   display: ${(props) => (props.click ? "flex" : "none")};
   flex-direction: row;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 
   margin-top: 10px;
 
@@ -49,7 +50,10 @@ const Dropdown = styled.div<{ click: boolean }>`
   a {
     color: black;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 0.8em;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.1em;
     transition: top 1s ease;
     :hover {
       color: white;
